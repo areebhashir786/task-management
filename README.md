@@ -1,3 +1,4 @@
+```md
 # 🚀 Task Management App
 
 A full-stack task management application built with modern web technologies. This app helps users manage tasks efficiently with real-time notifications and a clean user interface.
@@ -38,6 +39,7 @@ A full-stack task management application built with modern web technologies. Thi
 ---
 
 ## 📂 Project Structure
+```
 
 task-manager/
 │
@@ -45,6 +47,8 @@ task-manager/
 ├── server/ # Node.js backend
 ├── prisma/ # Prisma schema & migrations
 └── README.md
+
+````
 
 ---
 
@@ -55,30 +59,105 @@ task-manager/
 ```bash
 git clone https://github.com/your-username/task-manager.git
 cd task-manager
+````
 
-2️⃣ Setup Backend
+---
 
+### 2️⃣ Setup Backend
+
+```bash
 cd server
 npm install
+```
 
-Create a .env file in the server folder:
+Create a `.env` file in the `server` folder:
 
-PORT=
-DATABASE_URL=
-JWT_SECRET=
-SLACK_BOT_TOKEN=
-SLACK_CHANNEL=
+```env
+PORT=5000
+DATABASE_URL="mysql://USER:PASSWORD@localhost:3306/taskdb"
+JWT_SECRET=your_secret_key
+SLACK_BOT_TOKEN=your_slack_bot_token
+SLACK_CHANNEL=your_slack_channel
+```
 
 Run Prisma migrations:
 
+```bash
 npx prisma migrate dev
+```
 
 Start backend server:
+
+```bash
 npm run dev
 ```
 
-3️⃣ Setup Frontend
+---
 
+### 3️⃣ Setup Frontend
+
+```bash
 cd client
 npm install
 npm run dev
+```
+
+---
+
+## 🧪 Running Tests
+
+```bash
+npm run test
+```
+
+---
+
+## 🔔 Slack Integration
+
+This app sends task updates to Slack.
+
+### Setup:
+
+1. Create a Slack App
+2. Add a Bot User
+3. Enable required permissions (`chat:write`)
+4. Install the app to your workspace
+5. Copy Bot Token and Channel ID
+6. Add them in `.env`
+
+---
+
+## 🚀 Future Improvements
+
+- 🔄 Real-time updates with WebSockets
+- 📱 Better mobile responsiveness
+- 🧑‍🤝‍🧑 Team collaboration features
+- 📅 Task deadlines & reminders
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a pull request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💡 Author
+
+Areeb Hashir
+
+```
+
+```
