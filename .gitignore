@@ -1,0 +1,4 @@
+# task-management/.gitignore
+node_modules/
+.env
+coverage/
